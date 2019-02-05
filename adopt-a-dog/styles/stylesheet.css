@@ -10,6 +10,7 @@ white #fff
 Green #81b741
 BLue #093c60
 Cream #ececec
+
 /* GENERAL-------------------------------------------------------*/
 * {
   box-sizing: border-box;
@@ -45,11 +46,12 @@ body {
   background-color:#fff;
 }
 .hidden{
+  display: none;
   visibility: hidden;
   padding: 0;
   margin: 0;
 }
-/* GRID----------------------------------------------------------*/
+/* GRID AREAS----------------------------------------------------------*/
 .main-head {
   grid-area: header;
 }
@@ -65,42 +67,6 @@ body {
 .main-footer {
   grid-area: footer;
 }
-.dog1 {
-  grid-area: dog1;
-}
-.dog2 {
-  grid-area: dog2;
-}
-.dog3 {
-  grid-area: dog3;
-}
-.dog4 {
-  grid-area: dog4;
-}
-.dog5 {
-  grid-area: dog5;
-}
-.dog6 {
-  grid-area: dog6;
-}
-.dog7 {
-  grid-area: dog7;
-}
-.dog8 {
-  grid-area: dog8;
-}
-.dog9{
-  grid-area: dog9;
-}
-.dog10{
-  grid-area: dog10;
-}
-.dog11{
-  grid-area: dog11;
-}
-.dog12{
-  grid-area: dog12;
-}
 .text{
   grid-area: text;
 }
@@ -110,6 +76,7 @@ body {
 .dog-title{
   grid-area: title;
 }
+/* GRIDS -------------------------------------------------------------*/
 body{
   display: grid;
   grid-gap: 0;
@@ -128,8 +95,8 @@ body{
   grid-template-rows: auto;
   grid-template-areas:
   " text text text text "
-  " dog1 dog2 dog3 dog4 "
-  " dog5 dog6 dog7 dog8 "
+  "   dog dog dog dog   " /* Somehow this works without having a GRID-AREA for dogs, leaving it empty doesn't work */
+  "   dog dog dog dog   " /* Since the "more button" follows up the "dogs" i need to specify how many rows i want */
   "  .   more more  .   "
 }
 .doggos{
@@ -138,13 +105,11 @@ body{
   grid-template-columns:  1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas:
-  " title title title title"
-    " dog1 dog2 dog3 dog4 "
-    " dog5 dog6 dog7 dog8 "
-  " dog9 dog10 dog11 dog12 "
-    "  .   more more  .   "
+  " title title title title" /* Here having only one row of "dog" is fine since is not followed up by anything,*/
+    "   dog dog dog dog   "  /* it will expand down as many dogs there are */
+
 }
-/* HEADER */
+/* HEADER -----------------------------------------------------------*/
 header{
   background-image: url(bk.jpg);
   background-color: #090909; /* Used if the image is unavailable */
@@ -196,7 +161,7 @@ header{
 .fa-shopping-cart{
   font-size: 24px;
 }
-/* NAV-----------------------------------------------------------*/
+/* NAV -----------------------------------------------------------*/
 nav.main-nav {
   font-family: Neuton;
   font-weight: 1000;
@@ -229,7 +194,7 @@ a.navagation::before {
     content: "/";
     padding-right: 1rem;
 }
-/* MAIN TEXT------------------------------------------------- */
+/* MAIN TEXT ------------------------------------------------- */
 .main{
   overflow: auto;
 }
@@ -276,7 +241,7 @@ a.navagation::before {
 background: #093c60;
 color: white;
 }
-/* DOGS----------------------------------------------------- */
+/* DOGS ----------------------------------------------------- */
 h4{
   font-family: Neuton;
   color: #093c60;
@@ -285,13 +250,14 @@ h4{
   padding: 0;
   margin: .5rem 0 .9rem .9rem;
 }
-.dog1, .dog2, .dog3, .dog4, .dog5, .dog6, .dog7, .dog8, .dog9, .dog10, .dog11, .dog12{
+/* Got rid of dog numbers so now is scaleable, no matter the amount of dogs i have. */
+.dog {
   box-sizing: border-box;
   border: #ececec 2px solid;
   padding-bottom: .5rem;
   overflow: hidden;
 }
-.dog1 p, .dog2 p, .dog3 p, .dog4 p, .dog5 p, .dog6 p, .dog7 p, .dog8 p, .dog9 p, .dog10 p, .dog11 p, .dog12 p{
+.dog p {
   color: #5b5b5b;
   font-family: sans-serif;
   font-size: .8rem;
@@ -299,7 +265,7 @@ h4{
   padding-bottom: .5rem;
   margin: .5rem .9rem;
 }
-.dog1 button, .dog2 button, .dog3 button, .dog4 button, .dog5 button, .dog6 button, .dog7 button, .dog8 button, .dog9 button, .dog10 button, .dog11 button, .dog12 button{
+.dog button {
   background-color: #81b741;
   font-family: sans-serif;
   border: none;
@@ -314,11 +280,11 @@ h4{
   display: block;
   margin: .5rem auto;
 }
-.dog1 button:hover, .dog2 button:hover, .dog3 button:hover, .dog4 button:hover, .dog5 button:hover, .dog6 button:hover, .dog7 button:hover, .dog8 button:hover, .dog9 button:hover, .dog10 button:hover, .dog11 button:hover, .dog12 button:hover{
+.dog button:hover {
   background: #093c60;
   color: white;
 }
-.dog1 img, .dog2 img, .dog3 img, .dog4 img, .dog5 img, .dog6 img, .dog7 img, .dog8 img, .dog9 img, .dog10 img, .dog11 img, .dog12 img{
+.dog img {
   object-fit: cover;
   width: 100%;
 }
@@ -333,7 +299,7 @@ margin: 0;
 .doggos{
   padding-top: 0;
 }
-/* BLOG---------------------------------------------------------- */
+/* BLOG ---------------------------------------------------------- */
 .art{
   overflow: auto;
 }
@@ -373,7 +339,7 @@ margin: 0;
   margin: .5rem .9rem;
   line-height: 180%;
 }
-/* CHECKOUT FORM--------------------------------------------- */
+/* CHECKOUT FORM --------------------------------------------- */
 h2.check-title{
  font-family: Neuton;
  color: #093c60;
@@ -476,7 +442,7 @@ h2.first {
   cursor: pointer;
   display: block;
 }
-/* FOOTER---------------------------------------------------- */
+/* FOOTER ---------------------------------------------------- */
 footer{
   background: #093c60;
   text-align: center;
