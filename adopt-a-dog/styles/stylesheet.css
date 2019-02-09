@@ -45,6 +45,7 @@ html,body {
 body {
   background-color:#fff;
 }
+/* hidden h2 to please the validator */
 .hidden{
   display: none;
   visibility: hidden;
@@ -113,7 +114,7 @@ body{
 header{
   background-image: url(bk.jpg);
   background-color: #090909; /* Used if the image is unavailable */
-  height: 400px;
+  height: 25rem;
   background-repeat: no-repeat;
   background-size: cover;
   background-position:top;
@@ -121,12 +122,13 @@ header{
 .logo{
   position: absolute;
   margin:2rem 0 0 4rem;
-  padding-bottom: -10px;
+  padding-bottom: -0.625rem;
+  width: 25rem;
 }
 .slogan{
   position: absolute;
   margin:9.5rem 0 0 5rem;
-  padding-top: -10px;
+  padding-top: -0.625rem;
 }
 .button{
   position: absolute;
@@ -138,12 +140,12 @@ header{
   border-radius: 2px;
   color: white;
   font-weight: bolder;
-  padding: 5px 40px;
+  padding: 0.3125rem  2.5rem;
   text-decoration: none;
   text-align: center;
   display: inline-block;
-  font-size: 12px;
-  margin: 4px 2px;
+  font-size:  0.75rem;
+  margin: 0.25rem 2px;
   cursor: pointer;
 }
 .button:hover{
@@ -153,13 +155,13 @@ header{
 .cart{
   color: white;
   font-family: sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   position: absolute;
   top: 2.5rem;
   right: 9.5rem;
 }
 .fa-shopping-cart{
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 /* NAV -----------------------------------------------------------*/
 nav.main-nav {
@@ -201,8 +203,8 @@ a.navagation::before {
 .main-image{
   float: left;
   object-fit: cover;
-  width: 350px;
-  height: 350px;
+  width: 21.88rem;
+  height: 21.88rem;
   padding-top: 2rem;
   margin-right: 3.5rem;
 }
@@ -255,7 +257,6 @@ h4{
   box-sizing: border-box;
   border: #ececec 2px solid;
   padding-bottom: .5rem;
-  overflow: hidden;
 }
 .dog p {
   color: #5b5b5b;
@@ -285,8 +286,14 @@ h4{
   color: white;
 }
 .dog img {
+  width: 12.5rem;
+  height: 6.25rem;
   object-fit: cover;
   width: 100%;
+}
+.dog img:hover{
+  cursor: pointer;
+  opacity: 0.7;
 }
 .dog-title{
 font-family: Neuton;
@@ -302,6 +309,7 @@ margin: 0;
 /* BLOG ---------------------------------------------------------- */
 .art{
   overflow: auto;
+  /* text-align: justify; */
 }
  h2.art-title{
   font-family: Neuton;
@@ -314,8 +322,8 @@ margin: 0;
 .art img{
   object-fit: cover;
   object-position: left;
-  width: 280px;
-  height: 280px;
+  width: 17.5rem;
+  height: 17.5rem;
   float: left;
   margin: 3rem 3rem 3rem 0;
 }
@@ -454,7 +462,7 @@ footer img{
   margin-left: auto;
   margin-right: auto;
   width: 25%;
-  padding-top: 40px;
+  padding-top: 2.5rem;
 }
 .foot-text{
   width: 30%;
@@ -464,7 +472,7 @@ footer img{
   padding: .5rem 0;
 }
 nav.footer-nav {
-  font-size: 12px;
+  font-size: 0.75rem;
   justify-content: center;
   display: flex;
   align-items: center;
@@ -498,4 +506,13 @@ a.firstfooter {
 a.footer::before {
     content: "/";
     padding: 0 .5rem;
+}
+console.log('TESTING')
+let dogName;
+
+function dogadded(clicked_id) {
+ let dogName = clicked_id;
+ alert(`You added ${clicked_id} to your adoption list`)
+ document.getElementById(dogName).style.background = "red";
+ document.getElementById(dogName).style.textDecoration = "line-through";
 }
