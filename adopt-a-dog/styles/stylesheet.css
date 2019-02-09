@@ -507,12 +507,3 @@ a.footer::before {
     content: "/";
     padding: 0 .5rem;
 }
-console.log('TESTING')
-let dogName;
-
-function dogadded(clicked_id) {
- let dogName = clicked_id;
- alert(`You added ${clicked_id} to your adoption list`)
- document.getElementById(dogName).style.background = "red";
- document.getElementById(dogName).style.textDecoration = "line-through";
-}
