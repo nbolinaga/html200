@@ -41,7 +41,9 @@ function unadopt(clicked_id){
 function dogInfo(clicked_alt) {
 // gets dogs info by checking alt
  dogAlt = clicked_alt;
+// splits the alt info into an array
  dogPoint = dogAlt.split('-');
+ // displays each info separte
  dogPoint.forEach(function(item,index){
   alert(`${item}`);
   });
