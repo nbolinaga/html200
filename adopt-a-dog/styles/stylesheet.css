@@ -195,6 +195,7 @@ nav.main-nav  ul {
 a.navagation::before {
     content: "/";
     padding-right: 1rem;
+    color: #093c60;
 }
 /* MAIN TEXT ------------------------------------------------- */
 .main{
@@ -494,16 +495,15 @@ nav.footer-nav li a {
   margin: 0;
 }
 nav.footer-nav  li a:hover {
-  color: darkgrey;
+  color: #81b741;
 }
 nav.footer-nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-a.firstfooter {
-}
-a.footer::before {
+.footer::before {
     content: "/";
-    padding: 0 .5rem;
+    padding: 0 1rem 0 0;
+    color: white;
 }
