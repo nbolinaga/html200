@@ -43,7 +43,7 @@ function dogInfo(clicked_alt) {
  dogAlt = clicked_alt;
 // splits the alt info into an array
  dogPoint = dogAlt.split('-');
- // displays each info separte
+ // displays each info separate
  dogPoint.forEach(function(item,index){
   alert(`${item}`);
   });
