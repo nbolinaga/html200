@@ -251,10 +251,9 @@ a.navagation::before {
   padding: .5rem 2.5rem;
   text-decoration: none;
   text-align: center;
-  font-size: .8rem;
   cursor: pointer;
   display: block;
-  margin: .5rem -.6rem;
+  margin: 1rem -.6rem;
   font-size: 1rem;
 }
 .more:hover{
@@ -600,97 +599,10 @@ nav.footer-nav ul {
     color: white;
 }
 /* MEDIA QUERY ---------------------------------------------------------------- */
-/* PHONES */
-@media only screen
-  and (min-width: 100px)
-  and (max-width: 769px)
-   {
 
-  body {
-    width: 100%;
-    display: grid;
-    grid-template-columns: .85fr 4fr .85fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "header header header"
-      "nav nav nav"
-      " . main  ."
-      "footer footer footer";
-  }
-  aside {
-    display: none;
-  }
-  .main{
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns:  1fr ;
-    grid-template-rows: auto;
-    grid-template-areas:
-    " text   "
-    " dog    "
-    " dog    "
-    " dog    "
-    " dog    "
-    " dog    "
-    " dog    "
-    " more   "
-    " blogmore   "
-  }
-  .blogmore {
-    visibility: visible;
-  }
-  nav.main-nav {
-    display: flex;
-    justify-content:center;
-    padding: 0rem;
-  }
-  nav.main-nav  li a{
-      padding: 0rem;
-  }
-  nav.main-nav  ul {
-      padding: 0rem;
-  }
-  a.navagation::before{
-    padding-left: 1rem;
-  }
-  header{
-    display: flex;
-    position: relative;
-    justify-content:center;
-    width: 100%;
-  }
-  .logo{
-    margin: 0rem;
-    width:20rem;
-    top: 3rem;
-  }
-  .slogan{
-    margin: 0rem;
-    width:20rem;
-    top: 10rem;
-    text-align: center;
-  }
-  .button{
-    margin: 0rem;
-    top: 20rem;
-    right: auto;
-  }
-  .cart{
-    margin: 0rem;
-    top: 18rem;
-    right: auto;
-  }
-  .dog {
-    overflow: hidden;
-  }
-  .dog img{
-    height: 300px;
-  }
-}
+
 /* TABLETS */
-@media only screen
-  and (min-width: 769px)
-  and (max-width: 1025px){
+@media only screen and (min-device-width : 769px) and (max-device-width : 1024px){
     body {
       width: 100%;
       display: grid;
@@ -713,5 +625,88 @@ nav.footer-nav ul {
       " dog   dog "
       " dog   dog "
       " more  more"
+    }
+  }
+  /* PHONES */
+  @media only screen and (min-device-width : 320px) and (max-device-width : 768px){
+    body {
+      width: 100%;
+      display: grid;
+      grid-template-columns: .85fr 4fr .85fr;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        " . main  ."
+        "footer footer footer";
+    }
+    aside {
+      display: none;
+    }
+    .main{
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-columns:  1fr ;
+      grid-template-rows: auto;
+      grid-template-areas:
+      " text   "
+      " dog    "
+      " dog    "
+      " dog    "
+      " dog    "
+      " dog    "
+      " dog    "
+      " more   "
+      " blogmore   "
+    }
+    .blogmore {
+      visibility: visible;
+    }
+    nav.main-nav {
+      display: flex;
+      justify-content:center;
+      padding: 0rem;
+    }
+    nav.main-nav  li a{
+        padding: 0rem;
+    }
+    nav.main-nav  ul {
+        padding: 0rem;
+    }
+    a.navagation::before{
+      padding-left: 1rem;
+    }
+    header{
+      display: flex;
+      position: relative;
+      justify-content:center;
+      width: 100%;
+    }
+    .logo{
+      margin: 0rem;
+      width:20rem;
+      top: 3rem;
+    }
+    .slogan{
+      margin: 0rem;
+      width:20rem;
+      top: 10rem;
+      text-align: center;
+    }
+    .button{
+      margin: 0rem;
+      top: 20rem;
+      right: auto;
+    }
+    .cart{
+      margin: 0rem;
+      top: 18rem;
+      right: auto;
+    }
+    .dog {
+      overflow: hidden;
+    }
+    .dog img{
+      height: 300px;
     }
   }
