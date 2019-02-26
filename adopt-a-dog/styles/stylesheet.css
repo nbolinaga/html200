@@ -506,15 +506,10 @@ margin: .5rem 0 2rem 0;
 .zip{
   margin-top: .5rem;
 }
-.first{
-  display: flex;
-  justify-content:left;
-  padding: 0;
-  margin: 0;
-}
+
 h2.first {
-  padding: 0 1rem 0 1rem;
-  margin: 0;
+  padding: 0 1rem 0 0;
+  margin: 1rem;
   font-size: 1.2rem;
   font-family: sans-serif;
   font-weight: lighter;
@@ -600,9 +595,11 @@ nav.footer-nav ul {
 }
 /* MEDIA QUERY ---------------------------------------------------------------- */
 
-
 /* TABLETS */
-@media only screen and (min-device-width : 769px) and (max-device-width : 1024px){
+
+@media only screen
+and (max-width : 1024px){
+
     body {
       width: 100%;
       display: grid;
@@ -626,9 +623,38 @@ nav.footer-nav ul {
       " dog   dog "
       " more  more"
     }
+    .doggos{
+      display: grid;
+      grid-gap: 3rem;
+      grid-template-columns:   1fr 1fr ;
+      grid-template-rows: auto;
+      grid-template-areas:
+      " title title "
+      "   dog dog    "
   }
+  body.alt{
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header header header header"
+      "nav nav nav nav"
+      ". main main ."
+      "footer footer footer footer";
+  }
+  .art h3, .art p{
+    float: none;
+  }
+  .art img{
+    width: 100%;
+  }
+
   /* PHONES */
-  @media only screen and (min-device-width : 320px) and (max-device-width : 768px){
+
+  @media only screen
+    and (max-width : 768px){
+
     body {
       width: 100%;
       display: grid;
@@ -639,6 +665,15 @@ nav.footer-nav ul {
         "nav nav nav"
         " . main  ."
         "footer footer footer";
+    }
+    .doggos{
+      display: grid;
+      grid-gap: 3rem;
+      grid-template-columns:  1fr ;
+      grid-template-rows: auto;
+      grid-template-areas:
+      "title"
+      "dog";
     }
     aside {
       display: none;
@@ -658,6 +693,17 @@ nav.footer-nav ul {
       " dog    "
       " more   "
       " blogmore   "
+    }
+    body.alt{
+      display: grid;
+      grid-gap: 0;
+      grid-template-columns: 1fr 4fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        ". main  ."
+        "footer footer footer";
     }
     .blogmore {
       visibility: visible;
@@ -708,5 +754,47 @@ nav.footer-nav ul {
     }
     .dog img{
       height: 300px;
+    }
+    .art-title{
+      text-align: center;
+    }
+    .art h3{
+      float: none;
+      margin-left: 0px;
+      margin-right: 0px;
+      text-align: center;
+    }
+    .art p{
+      float: none;
+      text-align: justify;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+    .art img{
+      width: 100%;
+    }
+    .my-form{
+      width: 100%;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+    .adress{
+      border: none;
+      padding: 0;
+      display: inline;
+      justify-content: none;
+      margin-bottom: 1rem;
+    }
+    .city{
+      margin-bottom: 1rem;
+      margin-top: .5rem;
+    }
+    .state{
+      margin-bottom: 1rem;
+      margin-top:  .5rem;
+    }
+    .zip{
+      margin-bottom: 1rem;
+      margin-top: .5rem;
     }
   }
