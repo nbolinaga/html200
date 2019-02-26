@@ -598,7 +598,7 @@ nav.footer-nav ul {
 /* TABLETS */
 
 @media only screen
-and (max-width : 1024px){
+and (max-width : 1100px){
 
     body {
       width: 100%;
@@ -653,7 +653,7 @@ and (max-width : 1024px){
   /* PHONES */
 
   @media only screen
-    and (max-width : 768px){
+    and (max-width : 670px){
 
     body {
       width: 100%;
