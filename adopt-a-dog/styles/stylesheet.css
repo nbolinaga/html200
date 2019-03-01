@@ -656,7 +656,7 @@ and (max-width : 850px){
     body {
       width: 100%;
       display: grid;
-      grid-template-columns: .85fr 4fr 2fr .85fr;
+      grid-template-columns: 1fr 2fr 2fr 1fr;
       grid-template-rows: auto;
       grid-template-areas:
         "header header header header"
@@ -666,7 +666,7 @@ and (max-width : 850px){
     }
     .main{
       display: grid;
-      grid-gap: 1rem;
+      grid-gap: 3rem;
       grid-template-columns:  1fr 1fr ;
       grid-template-rows: auto;
       grid-template-areas:
