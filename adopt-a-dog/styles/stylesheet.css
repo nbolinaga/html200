@@ -667,7 +667,7 @@ and (max-width : 850px){
     .main{
       display: grid;
       grid-gap: 3rem;
-      grid-template-columns:  1fr 1fr ;
+      grid-template-columns:  1fr 1fr  ;
       grid-template-rows: auto;
       grid-template-areas:
       " text text "
@@ -675,6 +675,7 @@ and (max-width : 850px){
       " dog   dog "
       " dog   dog "
       " more  more"
+      " blogmore blogmore"
     }
     .doggos{
       display: grid;
@@ -701,6 +702,9 @@ and (max-width : 850px){
   }
   .art img{
     width: 100%;
+  }
+  .blogmore {
+    visibility: visible;
   }
   aside {
     display: none;
