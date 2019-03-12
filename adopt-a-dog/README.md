@@ -30,10 +30,12 @@ Frustrations
 - Not having enough savings.
 
 Information
+
 All of John's sons have moved out of home to other states but they still frequently visit him and his wife. Even though he is pretty healthy for his age he still would like a dog to keep him company and help him so way to move around. Get tired to quickly to go visit various pet stores to look for the perfect companion and would prefer an easier alternative.
 Has owned pets all his life.
 
 Device preferences
+
 Knows how to use basic computer programs with the help of his wife. (Internet, Word, Solitare, etc) Old Hardware but enough to run the latest browsers. Doesn't own a smartphone or tablet.
 
 
@@ -63,6 +65,7 @@ Frustrations
 -	Exercising.
 
 Information
+
 She is a single child of a divorced couple and has always gotten what she wants, goes to an expensive college paid by her parents.
 Olive lives in a house with four roommates, they all have different schedules but someone is always home.
 They would like to adopt a dog to keep them company and distract them from their frustrations.
@@ -70,6 +73,7 @@ They would like to adopt a dog to keep them company and distract them from their
 Olive hasn't had a dog in her life but has owned multiple cats, she currently has two.
 
 Device preferences
+
 Owns an expensive Macbook but uses her iPhone 90% of the time to browse websites, uses Chrome for IOS.
 
 
