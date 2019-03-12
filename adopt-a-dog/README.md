@@ -5,26 +5,29 @@ Adopt a Dog is based in Seattle, a really pet friendly city, where almost everyb
 Here are two completely different examples of user personas that could belong to that user base.
 
 ------- John Millstone ---------------------------------------------------------
+
 "I don't even know what memes are, I'm, like, an old person, so I don't really know what a meme is."
 
-Age: 74
-Work: Retired General Manager.
-Family: Married, 3 kids, 5 grandkids.
-Location: Spokane, WA.
-Education: Bachelor’s degree.
+- Age: 74
+- Work: Retired General Manager.
+- Family: Married, 3 kids, 5 grandkids.
+- Location: Spokane, WA.
+- Education: Bachelor’s degree.
 
 Traits
-•	Nice.
-•	Talkative.
-•	Smart.
+- Nice.
+- Talkative.
+- Smart.
+
 Goals
-•	See his grandkids graduate college.
-•	Pay all his debt before passing away.
-•	Visiting Japan.
+- See his grandkids graduate college.
+- Pay all his debt before passing away.
+- Visiting Japan.
+
 Frustrations
-•	Forgetting to take his medications.
-•	Getting tired to fast.
-•	Not having enough savings.
+- Forgetting to take his medications.
+- Getting tired to fast.
+- Not having enough savings.
 
 Information
 All of John's sons have moved out of home to other states but they still frequently visit him and his wife. Even though he is pretty healthy for his age he still would like a dog to keep him company and help him so way to move around. Get tired to quickly to go visit various pet stores to look for the perfect companion and would prefer an easier alternative.
@@ -35,26 +38,29 @@ Knows how to use basic computer programs with the help of his wife. (Internet, W
 
 
 ------- Olive Miller -----------------------------------------------------------
+
 "Veni Vidi Vici"
 
-Age: 25
-Work: College Student / Part-time waitress.
-Family: Single.
-Location: Seattle, WA.
-Education: Bachelor’s degree.
+- Age: 25
+- Work: College Student / Part-time waitress.
+- Family: Single.
+- Location: Seattle, WA.
+- Education: Bachelor’s degree.
 
 Traits
-•	Millennial.
-•	Tech-savvy.
-•	Selfish.
+-	Millennial.
+-	Tech-savvy.
+-	Selfish.
+
 Goals
-•	Finish College.
-•	Find the love of her life.
-•	Travel the world.
+-	Finish College.
+-	Find the love of her life.
+-	Travel the world.
+
 Frustrations
-•	Finals.
-•	Boys.
-•	Exercising.
+-	Finals.
+-	Boys.
+-	Exercising.
 
 Information
 She is a single child of a divorced couple and has always gotten what she wants, goes to an expensive college paid by her parents.
