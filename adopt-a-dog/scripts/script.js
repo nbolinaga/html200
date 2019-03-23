@@ -1,4 +1,7 @@
+
 let checkoutTotal = 0;
+localStorage.setItem('zero', checkoutTotal);
+
 let dogPrice = 123.45;
 let dogName;
 
@@ -11,12 +14,13 @@ function dogAdded(clicked_id) {
 // (decided to round to 2 decimals since it was resulting in $864.1500000000001 when ading the seventh dog. OCD i guess)
  alert(`You added ${clicked_id} to your adoption list. Your total is now: $${Number((checkoutTotal).toFixed(2))}`);
 // visually changes button once clicked
- document.getElementById(dogName).style.background = 'tomato';
- document.getElementById(dogName).innerHTML = 'Unadopt';
+ $(`#${dogName}`)[0].style.background = 'tomato';
+ $(`#${dogName}`)[0].innerHTML = 'Unadopt';
  // button will now execute unadopt function when pressed
- document.getElementById(dogName).setAttribute('onclick', 'unadopt(this.id)');
+ $(`#${dogName}`)[0].setAttribute('onclick', 'unadopt(this.id)');
  // changes total indicator on the header
- document.getElementById('cart').innerHTML = `<i class='fas fa-shopping-cart'></i>  $${Number((checkoutTotal).toFixed(2))}`;
+ $('#cart')[0].innerHTML = `<i class='fas fa-shopping-cart'></i>  $${Number((checkoutTotal).toFixed(2))}`;
+ localStorage.setItem('zero', checkoutTotal);
 }
 function unadopt(clicked_id){
 // gets the dogs name by checking id
@@ -27,12 +31,12 @@ function unadopt(clicked_id){
 // (decided to round to 2 decimals since it was resulting in $864.1500000000001 when ading the seventh dog. OCD i guess)
  alert(`You removed ${clicked_id} from your adoption list. Your total is now: $${Number((checkoutTotal).toFixed(2))}`);
 // visually changes button once clicked
- document.getElementById(dogName).style.background = '#81b741';
- document.getElementById(dogName).innerHTML = 'Adopt';
+ $(`#${dogName}`)[0].style.background = '#81b741';
+ $(`#${dogName}`)[0].innerHTML = 'Adopt';
  // button will now execute dogAdded function when pressed
- document.getElementById(dogName).setAttribute('onclick', 'dogAdded(this.id)');
+ $(`#${dogName}`)[0].setAttribute('onclick', 'dogAdded(this.id)');
  // changes total indicator on the header
- document.getElementById('cart').innerHTML = `<i class='fas fa-shopping-cart'></i>  $${Number((checkoutTotal).toFixed(2))}`;
+ $('#cart')[0].innerHTML = `<i class='fas fa-shopping-cart'></i>  $${Number((checkoutTotal).toFixed(2))}`;
 }
 
 
