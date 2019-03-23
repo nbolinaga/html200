@@ -20,6 +20,7 @@ const blogPosts = [
     p2: 'Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam.'
   }
 ]
+
 for (let i = 0; i < blogPosts.length; i++){
   const blog = document.createElement('article');
   blog.setAttribute('class', 'art');
