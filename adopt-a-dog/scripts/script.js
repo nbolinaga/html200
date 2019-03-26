@@ -1,7 +1,4 @@
-
 let checkoutTotal = 0;
-localStorage.setItem('zero', checkoutTotal);
-
 let dogPrice = 123.45;
 let dogName;
 
@@ -20,7 +17,6 @@ function dogAdded(clicked_id) {
  $(`#${dogName}`)[0].setAttribute('onclick', 'unadopt(this.id)');
  // changes total indicator on the header
  $('#cart')[0].innerHTML = `<i class='fas fa-shopping-cart'></i>  $${Number((checkoutTotal).toFixed(2))}`;
- localStorage.setItem('zero', checkoutTotal);
 }
 function unadopt(clicked_id){
 // gets the dogs name by checking id
@@ -39,8 +35,6 @@ function unadopt(clicked_id){
  $('#cart')[0].innerHTML = `<i class='fas fa-shopping-cart'></i>  $${Number((checkoutTotal).toFixed(2))}`;
 }
 
-
-
 // Discovered you can just alert an images alt text so why not use it as an alert
 function dogInfo(clicked_alt) {
 // gets dogs info by checking alt
@@ -52,3 +46,10 @@ function dogInfo(clicked_alt) {
   alert(`${item}`);
   });
 }
+
+
+
+// hover effect -------------------------------------------------------------------
+$('section.dog img').hover(function(e) {
+  $(`#${this.id}`).toggleClass('border')
+})
