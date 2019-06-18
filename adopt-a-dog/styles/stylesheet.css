@@ -177,6 +177,22 @@ header{
 .fa-shopping-cart{
   font-size: 1.5rem;
 }
+.pdf{
+  position: fixed;
+  top: 0;
+  background: #81b741;
+  text-decoration: none;
+  width:100%;
+  text-align: center;
+  padding: 5px 0;
+  z-index: 999;
+}
+
+.pdf a {
+  text-decoration: none;
+  color: white;
+
+}
 /* NAV -----------------------------------------------------------*/
 nav.main-nav {
   font-family: Neuton;
